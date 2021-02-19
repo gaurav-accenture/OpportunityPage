@@ -12,10 +12,10 @@
         </apex:pageblock>
         <apex:pageblock title="Opportunities" id="opps">
             <apex:pageblocktable value="{!opportunities}" var="opp">
-                <apex:column value="opp.name"/>
-                <apex:column value="opp.account.name"/>
-                <apex:column value="opp.closedate"/>
-                <apex:column value="opp.probability"/>
+                <apex:column value="{!opp.name}"/>
+                <apex:column value="{!opp.account.name}"/>
+                <apex:column value="{!opp.closedate}"/>
+                <apex:column value="{!opp.probability}"/>
             </apex:pageblocktable>
         </apex:pageblock>
     </apex:form>

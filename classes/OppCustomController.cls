@@ -13,7 +13,7 @@ public class OppCustomController {
     public List<Opportunity> getOpportunities(){
         List<Opportunity> Opportunities= Database.query(
                                 'SELECT name, account.name, closedate, probability ' +
-                                'FROM opportunity '
+                                'FROM opportunity '+
                                 'WHERE stagename = '+ stage +' and ownerid = '+user.id);
         return Opportunities;
     }
