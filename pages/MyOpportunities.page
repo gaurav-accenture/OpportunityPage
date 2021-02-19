@@ -1,0 +1,22 @@
+<apex:page controller="OppCustomController">
+    <apex:form>
+        <apex:pageblock title="Stages">
+            <apex:pageblocksection>
+                <apex:selectList value="{!Stages}" size="1">
+                    <apex:selectOptions value="{!Stages}"/>
+                </apex:selectList> 
+            </apex:pageblocksection>
+            <apex:pageblocksection>
+                <apex:commandButton value='Filter' action="{!getOpps}"/>
+            </apex:pageblocksection>
+        </apex:pageblock>
+        <apex:pageblock title="Opportunities" id="opps">
+            <apex:pageblocktable value="{!opportunities}" var="opp">
+                <apex:column value="opp.name"/>
+                <apex:column value="opp.account.name"/>
+                <apex:column value="opp.closedate"/>
+                <apex:column value="opp.probability"/>
+            </apex:pageblocktable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

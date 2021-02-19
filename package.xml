@@ -5,7 +5,7 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>OpportunityPage</members>
+        <members>MyOpportunities</members>
         <name>ApexPage</name>
     </types>
     <version>50.0</version>
