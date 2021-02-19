@@ -15,5 +15,9 @@ public class OppCustomController {
         return Opportunities;
     }
 
+    public PageReference go(){
+        return null;
+    }
+
     // public List
 }

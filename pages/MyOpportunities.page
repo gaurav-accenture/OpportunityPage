@@ -7,7 +7,7 @@
                 </apex:selectList> 
             </apex:pageblocksection>
             <apex:pageblocksection>
-                <apex:commandButton value='Filter' action="{!getOpportunities}"/>
+                <apex:commandButton value='Filter' action="{!go}"/>
             </apex:pageblocksection>
         </apex:pageblock>
         <apex:pageblock title="Opportunities">
