@@ -11,7 +11,7 @@ public class OppCustomController {
     }
 
     public List<Opportunity> getOpportunities(){
-        List<Opportunity> Opportunities= [SELECT name, account.name, closedate, probability FROM opportunity WHERE stagename = :stage and ownerid = :UserInfo.getUserId];
+        List<Opportunity> Opportunities= [SELECT name, account.name, closedate, probability FROM opportunity WHERE stagename = :stage and ownerid = :UserInfo.getUserId()];
         return Opportunities;
     }
 
