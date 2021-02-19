@@ -10,7 +10,7 @@
                 <apex:commandButton value='Filter' action="{!getOpportunities}"/>
             </apex:pageblocksection>
         </apex:pageblock>
-        <apex:pageblock title="Opportunities" id="opps">
+        <apex:pageblock title="Opportunities">
             <apex:pageblocktable value="{!opportunities}" var="opp">
                 <apex:column value="{!opp.name}"/>
                 <apex:column value="{!opp.account.name}"/>
