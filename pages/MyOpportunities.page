@@ -7,16 +7,16 @@
                 </apex:selectList> 
             </apex:pageblocksection>
             <apex:pageblocksection>
-                <apex:commandButton value='Filter' action="{!getOpps}"/>
+                <!-- <apex:commandButton value='Filter' action="{!getOpps}"/> -->
             </apex:pageblocksection>
         </apex:pageblock>
-        <apex:pageblock title="Opportunities" id="opps">
+        <!-- <apex:pageblock title="Opportunities" id="opps">
             <apex:pageblocktable value="{!opportunities}" var="opp">
                 <apex:column value="opp.name"/>
                 <apex:column value="opp.account.name"/>
                 <apex:column value="opp.closedate"/>
                 <apex:column value="opp.probability"/>
             </apex:pageblocktable>
-        </apex:pageblock>
+        </apex:pageblock> -->
     </apex:form>
 </apex:page>
