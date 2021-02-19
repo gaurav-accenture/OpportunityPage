@@ -2,7 +2,7 @@
     <apex:form>
         <apex:pageblock title="Stages">
             <apex:pageblocksection>
-                <apex:selectList value="{!Stages}" size="1">
+                <apex:selectList value="{!Stage}" size="1">
                     <apex:selectOptions value="{!Stages}"/>
                 </apex:selectList> 
             </apex:pageblocksection>
